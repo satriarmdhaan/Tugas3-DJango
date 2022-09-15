@@ -11,7 +11,4 @@ library yang ada pada sistem operasi atau global.
 **Implementasi**
 Hal pertama yang saya lakukan adalah dengan melakukan clone repository template yang sudah diberikan ke dalam folder local. Setelah itu, saya membuat virtual environment
 pada folder local tersebut dan menjalankannya untuk instalasi seluruh modul dan library yang diperlukan. Setelah selesai instalasi, saya membuat fungsi dan parameter
-views.py dan urls.py serta katalog.html agar program dapat dijalankan. Lalu, saya melakukan migrasi untuk memuat data-data pada template repository ke dalam folder local.
-Setelah seluruh data dan file telah diubah dan siap untuk dijalankan, file dan data tersebut di push menuju github agar bisa dijalankan pada HEROKUAPP. Setelah melakukan
-push, saya menambahkan HEROKU_API_KEY dan HEROKU_APP_NAME pada github repository secret yang terdapat pada repository settings. Terakhir, program akan di deploy pada
-HEROKUAPP.
+views.py dan urls.py serta katalog.html agar program dapat dijalankan. Lalu, saya melakukan migrasi untuk memuat data-data pada template repository ke dalam folder local. Setelah seluruh data dan file telah diubah dan siap untuk dijalankan, file dan data tersebut di push menuju github agar bisa dijalankan pada HEROKUAPP. Setelah melakukan push, saya menambahkan HEROKU_API_KEY dan HEROKU_APP_NAME pada github repository secret yang terdapat pada repository settings. Terakhir, program akan di deploy pada HEROKUAPP.
