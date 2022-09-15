@@ -5,7 +5,7 @@ Penjelasan: Workflow dimulai dari Client melakukan HTTP Request dan diterima ole
 lanjut. Setelah itu, views.py akan meminta tampilan dari models.py yang dimana models.py akan mengambil data dari database. setelah views.py meminta tampilan dari
 models.py, views.py akan melanjutkan workflow menuju katalog.html yang nantinya akan dilakukan formatting untuk menampilkan tampilan. Selanjutnya, katalog.html akan
 membuat respon dan mengirim hasilnya menuju client.
-**Virtual Environment***
+**Virtual Environment**
 Virtual environment diperlukan untuk mengisolasi seluruh modul dan library yang diperlukan agar modul dan library yang kita butuhkan tidak terganggu oleh modul dan
 library yang ada pada sistem operasi atau global.
 **Implementasi**
