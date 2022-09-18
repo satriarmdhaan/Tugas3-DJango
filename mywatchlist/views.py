@@ -1,3 +1,4 @@
+from email import message
 from django.shortcuts import render
 from mywatchlist.models import watchlist
 from django.http import HttpResponse
@@ -8,7 +9,8 @@ def show_watchlist(request):
     context = {
         'list_watchlist' : data_watchlist,
         'nama' : 'Muhammad Satria Ramadhan',
-        'npm' : '2106751695',
+        'npm' : '2106751695'
+
     }
     return render(request, "mywatchlist.html", context)
 
