@@ -17,7 +17,18 @@ Link : [Link](https://tugas3-django.herokuapp.com/mywatchlist/)
     ...,
     'mywatchlist',
   ]
-  
+```
+3. Buka file `models.py` yang ada pada folder `mywatchlist` dan menambahkan potongan kode berikut.
+```shell
+from django.db import models
+
+class watchlist(models.Model):
+    title = models.CharField(max_length=255)
+    watched = models.TextField()
+    rating = models.IntegerField()
+    release_date = models.TextField()
+    review = models.TextField()
+```
 
 ## Postman
 # HTML
