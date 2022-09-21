@@ -1,4 +1,3 @@
-from email import message
 from django.shortcuts import render
 from mywatchlist.models import watchlist
 from django.http import HttpResponse
