@@ -10,7 +10,7 @@ Link : [Link](https://tugas3-django.herokuapp.com/mywatchlist/)
 ## Data Delivery dalam Implementasi Platform
 
 ## Langkah - Langkah Implementasi
-1. Membuat '''shell django-apps bernama '''shell mywatchlist dengan perintah python manage.py startapp mywatchlist.
+1. Membuat  > django-apps bernama  > shell mywatchlist dengan perintah > python manage.py startapp mywatchlist.
   
 
 ## Postman
