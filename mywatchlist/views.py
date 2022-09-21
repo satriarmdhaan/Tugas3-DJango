@@ -6,10 +6,19 @@ from django.core import serializers
 
 def show_watchlist(request):
     data_watchlist = watchlist.objects.all()
+    count = 0
+    for watch in data_watchlist:
+        if (watch.watched == "Sudah"):
+            count += 1
+    if (count < 10 - count):
+        message = "Wah, kamu masih sedikit menonton!"
+    else:
+        message = "Selamat, kamu sudah banyak menonton!"
     context = {
         'list_watchlist' : data_watchlist,
         'nama' : 'Muhammad Satria Ramadhan',
-        'npm' : '2106751695'
+        'npm' : '2106751695',
+        'message' : message
     }
     return render(request, "mywatchlist.html", context)
 
