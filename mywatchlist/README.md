@@ -1,7 +1,7 @@
-<br>**Link HEROKOUAPP**<br/>
-https://github.com/satriarmdhaan/Tugas3-DJango.git
-<br>
-flowchart LR
-    HTTP Request --> urls.py --> views.py <---> models.py <---> ld1[(Database)]
+## Link HEROKUAPP
 
-<br/>
+[Link](https://tugas3-django.herokuapp.com/mywatchlist/)
+
+## Perbedaan antara JSON, XML, dan HTML
+
+
