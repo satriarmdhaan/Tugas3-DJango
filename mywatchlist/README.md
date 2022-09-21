@@ -13,32 +13,32 @@ Link : [Link](https://tugas3-django.herokuapp.com/mywatchlist/)
 1. Membuat `django-app` bernama `mywatchlist` dengan perintah `python manage.py startapp mywatchlist`.
 
 2. Buka `settings.py` di folder `project_django` dan tambahkan aplikasi `mywatchlist` ke dalam variabel `INSTALLED_APPS` untuk mendaftarkan `django-app` yang sudah dibuat.
-```
-INSTALLED_APPS = [
-  ...,
-  'mywatchlist',
-]
-```
+  ```
+  INSTALLED_APPS = [
+    ...,
+    'mywatchlist',
+  ]
+  ```
 
 3. Buka 'urls.py' di folder `project_django` dan tambahkan path `mywatchlist` seperti sebagai berikut.
-```
-urlpatterns = [
-  ...,
-   path('mywatchlist/', include('mywatchlist.urls')),
-]
-```
+  ```
+  urlpatterns = [
+    ...,
+    path('mywatchlist/', include('mywatchlist.urls')),
+  ]
+  ```
 
 4. Buka file `models.py` yang ada pada folder `mywatchlist` dan menambahkan potongan kode berikut.
-```
-from django.db import models
+  ```
+  from django.db import models
 
-class watchlist(models.Model):
-    title = models.CharField(max_length=255)
-    watched = models.TextField()
-    rating = models.IntegerField()
-    release_date = models.TextField()
-    review = models.TextField()
-```
+  class watchlist(models.Model):
+      title = models.CharField(max_length=255)
+      watched = models.TextField()
+      rating = models.IntegerField()
+      release_date = models.TextField()
+      review = models.TextField()
+  ```
 
 5. Jalankan perintah `python manage.py makemigrations` untuk mempersiapkan migrasi skema model ke dalam _database_ Django lokal.
 
@@ -55,11 +55,11 @@ class watchlist(models.Model):
 11. Menambahkan `class` pada `test.py` dan fungsi-fungsi untuk melakukan testing pada `python manage.py test`.
 
 12. Menambahkan isi `Procfile` agar data-data pada `initial_mywatchlist_data.json` dapat ditampilkan pada HEROKUAPP dengan potongan kode sebagai berikut.
-```
-release: sh -c 'python manage.py migrate && python manage.py loaddata initial_mywatchlist_data.json'
+  ```
+  release: sh -c 'python manage.py migrate && python manage.py loaddata initial_mywatchlist_data.json'
 
-web: gunicorn project_django.wsgi --log-file -
-```
+  web: gunicorn project_django.wsgi --log-file -
+  ```
 
 13. Melakukan `add`,`commit`, dan `push` ke dalam github.
 
