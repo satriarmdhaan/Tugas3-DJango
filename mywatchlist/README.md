@@ -50,7 +50,19 @@ class watchlist(models.Model):
 
 9. Membuat function-function pada `views.py` untuk _render_ model yang telah dibuat ke dalam bentuk HTML, JSON, dan XML.
 
-10. Membuat routing pada `urls.py` yang berada dalam folder `mywatchlist` dengan cara menambahkan `urlpatterns`. 
+10. Membuat routing pada `urls.py` yang berada dalam folder `mywatchlist` dengan cara menambahkan `urlpatterns`.
+
+11. Menambahkan `class` pada `test.py` dan fungsi-fungsi untuk melakukan testing pada `python manage.py test`.
+
+12. Menambahkan isi `Procfile` agar data-data pada `initial_mywatchlist_data.json` dapat ditampilkan pada HEROKUAPP dengan potongan kode sebagai berikut.
+```
+release: sh -c 'python manage.py migrate && python manage.py loaddata initial_mywatchlist_data.json'
+
+web: gunicorn project_django.wsgi --log-file -
+```
+
+13. Melakukan `add`,`commit`, dan `push` ke dalam github.
+
 ## Postman
 # HTML
 ![mywatchlist-html](https://user-images.githubusercontent.com/112569195/191591557-9c07f489-9013-4e14-9688-bc39b70b3a14.jpg)
