@@ -10,7 +10,6 @@ def show_watchlist(request):
         'list_watchlist' : data_watchlist,
         'nama' : 'Muhammad Satria Ramadhan',
         'npm' : '2106751695'
-
     }
     return render(request, "mywatchlist.html", context)
 

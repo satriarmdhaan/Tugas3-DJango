@@ -32,9 +32,5 @@ table, th, tr {
   </tr>
   {% endfor %}
 </table>
-{%if "Sudah" in watchlist.watched > "Belum" in watchlist.watched %}
-<b>Selamat, kamu sudah banyak menonton!</b>
-{% else %}
-<b>Wah, kamu masih sedikit menonton!</b>
-{%endif %}
+
 {% endblock content %}
