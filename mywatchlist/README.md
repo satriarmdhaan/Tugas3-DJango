@@ -7,7 +7,11 @@ Link : [Link](https://tugas3-django.herokuapp.com/mywatchlist/)
 - XML  : XML (eXtensible Markup Language) adalah markup language seperti HTML yang berguna untuk menyimpan dan mentransfer data dalam bentuk teks sederhana dengan tree seperti HTML.
 - HTML : HTML (HyperText Markup Language) adalah markup language yang paling umum digunakan untuk membuat suatu laman website. Dalam HTML anda bisa membuat struktur tampilan laman website anda sendiri. HTMl digunakan hanya untuk menampilkan data-data dari bahasa pemrograman menjadi suatu tampilan yang lebih dimengerti oleh orang awam dan bukan untuk mentransfer data.
 
-## Data Delivery dalam implementasi platform
+## Data Delivery dalam Implementasi Platform
+
+## Langkah - Langkah Implementasi
+1. Membuat '''shell django-apps bernama '''shell mywatchlist dengan perintah python manage.py startapp mywatchlist.
+  
 
 ## Postman
 # HTML
