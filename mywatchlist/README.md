@@ -11,7 +11,7 @@ Link : [Link](https://tugas3-django.herokuapp.com/mywatchlist/)
 
 ## Postman
 # HTML
-![mywatchlist-html](https://user-images.githubusercontent.com/112569195/191591557-9c07f489-9013-4e14-9688-bc39b70b3a14.jpg
+![mywatchlist-html](https://user-images.githubusercontent.com/112569195/191591557-9c07f489-9013-4e14-9688-bc39b70b3a14.jpg)
 
 # JSON
 ![mywatchlist-json](https://user-images.githubusercontent.com/112569195/191591672-e13a98c4-6f08-441c-8484-e33b0fa9179e.jpg)
