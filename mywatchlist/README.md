@@ -44,121 +44,13 @@ class watchlist(models.Model):
 
 6. Jalankan perintah `python manage.py migrate` untuk menerapkan skema model yang telah dibuat ke dalam _database_ Django lokal.
 
-7. Buatlah sebuah folder bernama `fixtures` di dalam folder aplikasi `mywatchlist` dan buatlah sebuah berkas bernama `initial_mywatchlist_data.json` yang berisi kode berikut.
-```
-[
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 1,
-        "fields": {
-            "title": "House Of The Dragons",
-            "watched": "Sudah",
-            "rating": 5,
-            "release_date": "10 September 2022",
-            "review": "Filmnya bagus dan memiliki alur cerita yang menarik."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 2,
-        "fields": {
-            "title": "Mencuri Raden Saleh",
-            "watched": "Belum",
-            "rating": 4,
-            "release_date": "15 September 2022",
-            "review": "Filmnya memiliki alur cerita yang menarik dan menegangkan."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 3,
-        "fields": {
-            "title": "SPY x FAMILY",
-            "watched": "Belum",
-            "rating": 5,
-            "release_date": "9 April 2022",
-            "review": "Filmnya bagus dan ramah ditonton bersama keluarga."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 4,
-        "fields": {
-            "title": "Kimi No Nawa(Your Name)",
-            "watched": "Sudah",
-            "rating": 5,
-            "release_date": "26 Agustus 2016",
-            "review": "Memiliki alur cerita yang kompleks dan menyentuh hati."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 5,
-        "fields": {
-            "title": "Avengers: Endgame",
-            "watched": "Sudah",
-            "rating": 5,
-            "release_date": "24 April 2019",
-            "review": "CGI nya bagus dan filmnya tidak membosankan."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 6,
-        "fields": {
-            "title": "Top Gun: Maverick",
-            "watched": "Sudah",
-            "rating": 5,
-            "release_date": "24 Mei 2022",
-            "review": "Pembuatan filmnya totalitas karena banyak stunt yang dilakukan secara nyata."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 7,
-        "fields": {
-            "title": "No Time To Die",
-            "watched": "Sudah",
-            "rating": 4,
-            "release_date": "29 September 2021",
-            "review": "Filmnya menegangkan dan hanyut akan emosi."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 8,
-        "fields": {
-            "title": "Incantation",
-            "watched": "Sudah",
-            "rating": 5,
-            "release_date": "18 Maret 2022",
-            "review": "Filmnya seram dan mengerikan dengan konsep film documentary."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 9,
-        "fields": {
-            "title": "Stranger Things",
-            "watched": "Belum",
-            "rating": 5,
-            "release_date": "15 Juli 2016",
-            "review": "Plot ceritanya bagus dan memunculkan rasa penasaran."
-        }
-    },
-    {
-        "model": "mywatchlist.watchlist",
-        "pk": 10,
-        "fields": {
-            "title": "Thor: Love and Thunder",
-            "watched": "Belum",
-            "rating": 3,
-            "release_date": "06 Juli 2022",
-            "review": "Filmnya kurang menarik dan tidak menggambarkan film-film dari Marvel."
-        }
-    }
-]
-```
+7. Buatlah sebuah folder bernama `fixtures` di dalam folder aplikasi `mywatchlist` dan buatlah sebuah berkas bernama `initial_mywatchlist_data.json` yang berisi data-data objek mywatchlist.
+
+8. Jalankan perintah `python manage.py loaddata initial_mywatchlist_data.json` untuk memasukkan data tersebut ke dalam _database_ Django lokal.
+
+9. Membuat function-function pada `views.py` untuk _render_ model yang telah dibuat ke dalam bentuk HTML, JSON, dan XML.
+
+10. Membuat routing pada `urls.py` yang berada dalam folder `mywatchlist` dengan cara menambahkan `urlpatterns`. 
 ## Postman
 # HTML
 ![mywatchlist-html](https://user-images.githubusercontent.com/112569195/191591557-9c07f489-9013-4e14-9688-bc39b70b3a14.jpg)
